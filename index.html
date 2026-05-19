@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explain It Like a Mom</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- The main element holds the app content. It helps screen readers understand the page. -->
+  <main class="app">
+    <section class="intro">
+      <p class="eyebrow">A kinder way to untangle confusing words</p>
+      <h1>Explain It Like a Mom</h1>
+      <p class="subtitle">
+        Paste a confusing email, note, or set of instructions. This little app will turn it into a calmer, simpler explanation.
+      </p>
+    </section>
+
+    <section class="tool">
+      <!-- The label connects to the textarea using the matching "for" and "id" values. -->
+      <label for="confusingText">Paste the confusing text here</label>
+      <textarea id="confusingText" placeholder="Example: Per our prior correspondence, please remit all requested documentation by EOD..."></textarea>
+
+      <button id="explainButton" type="button">Explain This</button>
+
+      <!-- The app writes the simplified explanation sections into this area with JavaScript. -->
+      <div class="result" aria-live="polite">
+        <h2>Mom-style explanation</h2>
+        <div id="explanationText">
+          <p>Your simpler explanation will show up here.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
